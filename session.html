@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/jquery.mobile.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/counter.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
+</head>
+
+<body class="sessions">
+
+  <div class="main-wrapper">
+    <header class="scroll-header">
+    	<!-- Branding -->
+    	 <a class="brand-logo" href="/">
+      	<div class="hidden-sm brand">
+          <img alt=" logo" src="assets/img/easyhead-300.png">
+        </div>
+      </a>
+    	<div class="mobilemenu-toggle">
+    		<i class="fa fa-bars"></i>
+    	</div>
+    	<div class="counseling-menu-tab visible-xs" id="counselingmenu-toggle">
+    		My counseling<i class="fa fa-angle-down"></i>
+    	</div><!-- Menu -->
+    	<div class="menu">
+    			<ul class="main">
+    				<a href="/"><li class="active">Counseling</li></a>
+    				<a href=""><li>Ask A Counselor</li></a>
+    			</ul>
+    			<ul class="right">
+    				<li class="helpmenu">Help <i class="fa fa-angle-down"></i>
+    					<ul class="dropdown">
+    						<a href="/faq.html"><li>FAQ</li></a>
+    						<a href="/contact.html"><li>Contact us</li></a>
+    						<a href="/about.html"><li>About</li></a>
+    						<a href="/advice.html"><li>Advice</li></a>
+    						<a href="/reviews.html"><li>Reviews</li></a>
+    					</ul>
+    				</li>
+    				<li class="username">
+    					<span>Ralf<img class="usericon" src="assets/img/male.png"></span>  <i class="fa fa-angle-down hidden-xs"></i>
+    					<ul class="dropdown">
+    						<a href="/account.html"><li>Account settings</li></a>
+    						<a href="/"><li>My counselor</li></a>
+    						<a href="/"><li>Change counselor</li></a>
+    						<a href="/"><li><b>Subscribe</b></li></a>
+    						<a href="/"><li>Personal information</li></a>
+    						<a href="/"><li>Update picture</li></a>
+    						<a href="/"><li>Logout</li></a>
+    					</ul>
+    				</li>
+    			</ul>
+    	</div>
+    	<div class="counseling-menu">
+    		<a class="counselor" data-toggle="modal" href="#modal-counselor-info-22640">Joshua Siskin</a>
+    	</div>
+    </header>
+
+  <main class="content-container">
+    <div class="session-view">
+      <div class="session-wrapper">
+        <div class="sm-fluid-leftbar">
+          <div class="panel-group hidden-xs left-bar">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <p class="panel-title">
+                  <a href="#collapse-speaking-with" data-toggle="collapse" class="collapse-button" aria-expanded="true">Your Counselor</a>
+                </p>
+              </div>
+              <div class="panel-collapse collapse in" id="collapse-speaking-with" aria-labelledby="heading-speaking-with" aria-expanded="true">
+                <div class="panel-body">
+                  <div class="counselor hidden-xs speaking-with">
+                    <div class="avatar-name">
+                      <img src="assets/img/42670841e05bc0b8e79e65ec46162322.jpg" class="user-icon" alt="profile image">
+                      <h3>
+                        <a href="" class="counselor-name" data-toggle="modal"></a>
+                      </h3>
+                      <span class="credentials">(LMFT,BA,MS)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <p class="panel-title">
+                  <a href="#collapse-scheduler" data-toggle="collapse" class="collapse-button" aria-expanded="false">Your Counselor</a>
+                </p>
+              </div>
+              <div class="panel-collapse collapse in" id="collapse-scheduler" aria-labelledby="heading-scheduler" aria-expanded="true">
+                <div class="panel-body scheduling-tab client-schedule">
+                  <div id="datetimepicker">
+                    <div class="avatar-name">
+                      <img src="assets/img/42670841e05bc0b8e79e65ec46162322.jpg" class="user-icon" alt="profile image">
+                      <h3>
+                        <a href="" class="counselor-name" data-toggle="modal"></a>
+                      </h3>
+                      <span class="credentials">(LMFT,BA,MS)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="starred-link"></div>
+            <footer class="hidden-xs">
+              <p><strong>If you are in a crisis or any other person may be in danger - don't use this site. <a href="/gethelpnow/">These resources</a> can provide you with immediate help.</strong></p>
+              <p style="text-align: center;">
+                <a href="http://www.mentalhealthamerica.net/" target="_blank"><img src="assets/img/mha-badge-3.png" alt="MHA Logo" id="mha-logo"></a>
+                <a href="http://www.hhs.gov/ocr/privacy/" target="_blank"><img class="footer-icon" src="assets/img/hipaa.png"></a>
+                <a href="https://www.ssllabs.com/ssltest/analyze.html?d=www.betterhelp.com/" target="_blank"><img src="assets/img/ssl-secure-bw-logo.png" alt="SSL Secure Logo"></a>
+                <a href="http://www.ismho.org" target="blank"><img class="footer-icon" src="assets/img/ismho.png"></a></p>
+                <div class="lowerbar">
+                  <ul class="upper">
+                        <a href="https://twitter.com/betterhelp"><li class="social twitter"><i class="fa fa-twitter"></i></li></a>
+                        <a href="https://www.pinterest.com/betterhelp"><li class="social pinterest"><i class="fa fa-pinterest-p"></i></li></a>
+                        <a href="https://facebook.com/betterhelp" target="_blank"><li class="social facebook"><i class="fa fa-facebook-f"></i></li></a>
+                        <a href="https://www.linkedin.com/company/betterhelp-com" target="_blank"><li class="social linkedin"><i class="fa fa-linkedin"></i></li></a>
+                    </ul>
+                    <ul class="lower">
+                      <a href="/terms/"><li>Terms &amp; Conditions</li></a>
+                      <a href="/privacy/"><li>Privacy Policy</li></a>
+                      <a href="/accessibility/"><li>Web Accessibility</li></a>
+                      <li> 2020 BetterHelp</li>
+                  </ul>
+                </div>
+            </footer>
+          </div>
+        </div>
+        <div class="entries">
+          <div class="entries_container">
+            <div class="message-panel">
+              <div class="message-wrap questionnaire-wrap sent">
+                <div class="message-and-timestamp">
+                  <div class="message sent">
+                    <div class="author">
+                      <strong>From you</strong>
+                    </div>
+                    <div class="entry questionnaire">
+                      <div class="message-item">
+                        <p><strong>What is your gender?</strong></p>
+                        <p>male</p>
+                      </div>
+                      <div class="message-item">
+                        <p><strong>How old are you?</strong></p>
+                        <p>23</p>
+                      </div>
+                      <div class="message-item">
+                        <p><strong>Little interest or pleasure in doing things.</strong></p>
+                        <p>Several days</p>
+                      </div>
+                      <div class="message-item">
+                        <p><strong>Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual.</strong></p>
+                        <p>Not at all</p>
+                      </div>
+                      <div class="message-item">
+                        <p><strong>Feeling down, depressed or hopeless.</strong></p>
+                        <p>Several days</p>
+                      </div>
+                      <div class="message-item">
+                        <p><strong>Trouble falling asleep, staying asleep, or sleeping too much.</strong></p>
+                        <p>More than half the days</p>
+                      </div>
+
+                      <div class="message-item">
+                        <p><strong>Feeling tired or having little energy.</strong></p>
+                        <p>More than half the days</p>
+                      </div>
+                      <div class="message-item">
+                        <p><strong>Poor appetite or overeating.</strong></p>
+                        <p>Several days</p>
+                      </div>
+                      <div class="message-item">
+                        <p><strong>Feeling bad about yourself - or that you are a failure or have let yourself or your family down.</strong></p>
+                        <p>Several days</p>
+                      </div>
+                      <div class="message-item">
+                        <p><strong>Trouble concentrating on things, such as reading the newspaper or watching television.</strong></p>
+                        <p>Several days</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="message-wrap system">
+                <div class="message-and-timestamp">
+                  <div class="message mp-sensitive system">
+                    <div class="entry">
+                      <div class="alternative-system-message">
+                        <div><strong>From BetterHelp</strong></div>
+                      </div>
+                      <div>Hi Ralf</div>
+                      <div>
+                        <p>
+                          So you're probably asking - how does this work? It's quite simple, actually. Just like with any counseling, you and your counselor will discuss any challenges you're facing or might face, and you will develop some positive ways to reach your goals. The difference is that you don't need to come to an office and you don't need to schedule any time out of your day. Instead, you can write whenever it's convenient for you, and move forward at a pace that you feel comfortable with.
+                        </p>
+                        <p>
+                          So you're probably asking - how does this work? It's quite simple, actually. Just like with any counseling, you and your counselor will discuss any challenges you're facing or might face, and you will develop some positive ways to reach your goals. The difference is that you don't need to come to an office and you don't need to schedule any time out of your day. Instead, you can write whenever it's convenient for you, and move forward at a pace that you feel comfortable with.
+                        </p>
+                        <p>
+                          Please note that your messages with your counselor aren't in real-time but it won't be too long before you get a response from your counselor. Your sessions also have another benefit - you can re-read and reflect on our conversations at any time. Often, going back to a conversation can be very helpful and it's one of those things that will help you and your counselor move forward together.
+                        </p>
+                        <p>
+                          What happens if you feel you and your counselor don't connect well? While we try to match you with the best counselor for your needs, that can certainly happen! There are over 13,000therapists who work on this platform and you can switch to work with another counselor at any time.
+                        </p>
+                        <p>
+                          Thank you for trying BetterHelp, and for joining the community of 1,200,000 people who took steps to make a positive change in their lives. We'll now leave it to you and your counselor to get started!
+                        </p>
+                        <span>BetterHelp Team</span>
+                      </div>
+                      <div class="date-cont">October 14, 2020 at 01:33pm</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="message-wrap received">
+                <div class="from-avatar">
+                  <img src="assets/img/42670841e05bc0b8e79e65ec46162322.jpg" alt="" class="author-image">
+                </div>
+                <div class="message-and-timestamp">
+                  <div class="message mp-sensitive received">
+                    <div class="entry">
+                      Hi Ralf<br><br>
+                      My name is Joshua Siskin  and I am a licensed therapist  (license number LMFT 48666) <br><br>
+                      Welcome to the online counseling room, which will be our private and secure place to communicate. You can enter this room from any Internet-connected device wherever you are. <br> <br>
+                      To help us get started, can you please tell me what brought you here? Just write a few short sentences about the challenges you're experiencing or what you would like to talk about and we will go from there. <br><br>
+                      Looking forward to working with you,<br><br>
+                      Joshua Siskin  (LMFT, BA, MS) <br><br>
+                    </div>
+                    <div class="date-cont">October 14, 2020 at 01:33pm</div>
+                  </div>
+                </div>
+              </div>
+              <div class="message-wrap received">
+                <div class="from-avatar">
+                  <img src="assets/img/42670841e05bc0b8e79e65ec46162322.jpg" alt="" class="author-image">
+                </div>
+                <div class="message-and-timestamp">
+                  <div class="message mp-sensitive received">
+                    <div class="entry">
+                      Checking in with you. I'm here if you need help.<br><br>
+                    </div>
+                    <div class="date-cont">October 14, 2020 at 01:33pm</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="writer">
+              <form action="/" class="editor-form" method="post" name="editor-form">
+                <div class="file-upload"></div>
+                <div aria-label="Press ESCAPE then TAB" aria-multiline="true" class="mp-sensitive form-control placeholderText" contenteditable="true" class="message-editor" role="textbox">
+                  <div></div>
+                </div>
+                <div class="menu-bar">
+                  <div data-role="editor-toolbar" data-target="#editor-message" class="editor-toolbar">
+                    <div class="dropdown bold hidden-xs">
+                      <a class="tool btn-info" data-edit="bold"><i class="fa fa-bold"></i></a>
+                    </div>
+                    <div class="dropdown hidden-xs">
+                      <a class="tool" data-edit="italic"><i class="fa fa-italic"></i></a>
+                    </div>
+                    <div class="dropdown hidden-xs">
+                      <a class="tool btn-info" data-edit="underline"><i class="fa fa-underline"></i></a>
+                    </div>
+                    <div class="dropdown hidden-xs">
+                      <a class="tool" data-edit="strikethrough"><i class="fa fa-strikethrough"></i></a>
+                    </div>
+                    <div class="dropup hidden-xs">
+                      <a aria-expanded="false" aria-haspopup="true" class="tool dropdown-toggle" data-toggle="dropdown" class="fontsize-menu"><i class="fa fa-text-height"></i>&nbsp;<i class="fa fa-caret-down"></i></a>
+                      <ul aria-labelledby="fontsize-menu" class="dropdown-menu" role="menu">
+                        <li>
+                          <a data-edit="fontSize 5"><font size="5">Huge</font></a>
+                        </li>
+                        <li>
+                          <a data-edit="fontSize 3"><font size="3">Normal</font></a>
+                        </li>
+                        <li>
+                          <a data-edit="fontSize 1"><font size="1">Small</font></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown hidden-xs">
+                      <a class="tool" data-edit="insertunorderedlist"><i class="fa fa-list-ul"></i></a>
+                    </div>
+                    <div class="dropup hidden-xs">
+                      <a aria-expanded="false" aria-haspopup="true" class="tool dropdown-toggle" data-toggle="dropdown" class="emoticon-menu">
+                        <i class="fa fa-smile-o"></i>&nbsp;<i class="fa fa-caret-down"></i></a>
+                      <ul aria-labelledby="emoticon-menu" class="dropdown-menu" role="menu">
+                        <li>
+                          <div class="redactor_dropdown">
+                            <a class="redactor_btn_happy" data-edit="insertImage assets/img/happy.png"></a>
+                            <a class="redactor_btn_sad" data-edit="insertImage assets/img/sad.png"></a>
+                             <a class="redactor_btn_angry" data-edit="insertImage assets/img/angry.png"></a>
+                             <a class="redactor_btn_pissed_off" data-edit="insertImage assets/img/pissed_off.png"></a>
+                             <a class="redactor_btn_arrogant" data-edit="insertImage assets/img/arrogant.png"></a>
+                             <a class="redactor_btn_bashful" data-edit="insertImage assets/img/bashful.png"></a>
+                             <a class="redactor_btn_beat_up" data-edit="insertImage assets/img/beat_up.png"></a>
+                             <a class="redactor_btn_clap" data-edit="insertImage assets/img/clap.png"></a>
+                             <a class="redactor_btn_crying" data-edit="insertImage assets/img/crying.png"></a>
+                             <a class="redactor_btn_disappointed" data-edit="insertImage assets/img/disappointed.png"></a>
+                             <a class="redactor_btn_embarrassed" data-edit="insertImage assets/img/embarrassed.png"></a>
+                             <a class="redactor_btn_excruciating" data-edit="insertImage assets/img/excruciating.png"></a>
+                             <a class="redactor_btn_freaked_out" data-edit="insertImage assets/img/freaked_out.png"></a>
+                             <a class="redactor_btn_laugh" data-edit="insertImage assets/img/laugh.png"></a>
+                             <a class="redactor_btn_in_love" data-edit="insertImage assets/img/in_love.png"></a>
+                             <a class="redactor_btn_love_over" data-edit="insertImage assets/img/love_over.png"></a>
+                             <a class="redactor_btn_mad_tongue" data-edit="insertImage assets/img/mad_tongue.png"></a>
+                             <a class="redactor_btn_nervous" data-edit="insertImage assets/img/nervous.png"></a>
+                             <a class="redactor_btn_question" data-edit="insertImage assets/img/question.png"></a>
+                             <a class="redactor_btn_shame" data-edit="insertImage assets/img/shame.png"></a>
+                             <a class="redactor_btn_shocked" data-edit="insertImage assets/img/shocked.png"></a>
+                             <a class="redactor_btn_shut_mouth" data-edit="insertImage assets/img/shut_mouth.png"></a>
+                             <a class="redactor_btn_sleepy" data-edit="insertImage assets/img/sleepy.png"></a>
+                             <a class="redactor_btn_thinking" data-edit="insertImage assets/img/thinking.png"></a>
+                             <a class="redactor_btn_wink" data-edit="insertImage assets/img/wink.png"></a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <a aria-label="Upload file" class="tool fileUpload" class="uploadBtn" role="button" title="Attach a file"><i class="fa fa-paperclip"></i></a> <input class="upload uploadFile" type="file">
+                    </div>
+                    <div class="dropdown" class="urgent-button">
+                      <div class="urgent tool">
+                        <input class="editor-is_urgent" name="is_urgent" id="editor-is_urgent-check" type="checkbox"> <label for="editor-is_urgent-check">Urgent</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="editor-buttons">
+                    <div>
+                      <button class="btn btn-send editor-send btn-default pull-right" data-value="editor-send" type="button">Send</button>
+                    </div>
+                  </div>
+                </div><input class="popover-reply" type="hidden" value="Use this box to reply"> <input class="popover-write" type="hidden" value="Use this box write your message"> <input class="popover-autosave" type="hidden" value="We saved your entry so you can continue where you left off"> <input class=""popover-edit" type="hidden" value="Use this box to edit your note. You can save it again or send it as a message to "> <input class=""popover-modify" type="hidden" value="Use this box to edit your message">
+                <div class="btn btn-warning hidden" class="editor-cancel">
+                  <span class="glyphicon glyphicon-step-backward"></span> Cancel
+                </div><input class="editor-id" name="id" type="hidden"> <input class="editor-action" name="action" type="hidden"> <input class="entry-height" type="hidden" value=""> <input class="editor-height" type="hidden" value=""> <input class="message" name="message" type="hidden"> <input class=""removed_worksheet" name="removed_worksheet" type="hidden" value="false"> <input name="csrf_token" type="hidden" value="4aeb93879fbfc56f11274cd0029ba947cd07dc2e66b708307a3a7c985b8f23efa0008935789d5fef43bea34ee9fb4b5a22d0622445cb3414a18fa23dde8873e4"> <input name="client_id" type="hidden" value=""> <input name="nonce" type="hidden" value="client:11829647:editor-form:1606469468009">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  </div>
+  <script src="https://kit.fontawesome.com/1fbed31f7a.js" crossorigin="anonymous"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/slick/slick.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/odometer.min.js"></script>
+  <script src="assets/js/lozad.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/reviews.js"></script>
+  <script src="assets/js/jquery.datetimepicker.full.min.js"></script>
+  <script src="assets/js/session-main.js"></script>
+  <script src="assets/js/session.js"></script>
+  </body>
+</html>

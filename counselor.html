@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/jquery.mobile.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/counter.min.css">
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+    <header class="scroll-header">
+      <a class="brand-logo" href="/">
+        <div class="hidden-sm brand">
+          <img src="assets/img/easyhead-300.png" id="main-logo" alt="brand">
+        </div>
+      </a>
+      <div class="mobilemenu-toggle"><i class="fa fa-bars"></i></div>
+      <div class="header-cta hide">
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </div>
+      <div class="menu">
+        <ul class="main"></ul>
+        <ul class="right">
+          <a href="/about.html"><li>About</li></a>
+          <a href="/advice.html"><li>Advice</li></a>
+          <a href="/faq.html"><li>FAQ</li></a>
+          <a href="/reviews.html"><li>Reviews</li></a>
+          <a href="/counselor.html"><li class="active">Counselor Jobs</li></a>
+          <a href="/contact.html"><li>Contact</li></a>
+          <a href="/login.html" class="btn btn-info">Login</a>
+          <a href="/counselor.html" class="btn btn-primary">Get started</a>
+        </ul>
+      </div>
+    </header>
+
+    <main class="content-container content-container">
+  		<div class="banner-intro banner-intro3 darken">
+  			<div class="banner-intro-title">
+  				<h1 class="page-title">Counselor Jobs</h1>
+  				<div class="subtitle-text">
+  					Private practice with no doors and no overhead.
+  				</div>
+  			</div>
+  		</div>
+      <section class="counselor-earnings">
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-xs-12">
+                  <h2>Earn more with BetterHelp!</h2>
+                  <p>Interested in joining the world’s largest mental health platform? You decide your schedule and how much you want to work, we’ll take care of the client referrals and billing details!</p>
+                  <p>Find out how much you could be making by using the earnings calculator!</p>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                  <div class="counselor-earnings-calculator">
+                      <div class="row">
+                          <div class="col-sm-12 center margin-bottom">
+                              <h3>Estimated Earnings with BetterHelp</h3>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-12 employment-type">
+                              <strong class="padding-right type-title">I want to work:</strong>
+                              <input type="radio" id="full-time-radio" name="employment-type" value="full-time" checked="">
+                              <label class="padding-right" for="full-time-radio">Full-time</label>
+                              <input type="radio" id="part-time-radio1" name="employment-type" value="part-time">
+                              <label for="part-time-radio1">Part-time</label>
+                          </div>
+                      </div>
+                      <div class="full-time-range-container">
+                          <div class="range-wrap">
+                              <output class="bubble" style="left: calc(55% + -0.25px);">41</output>
+                              <input class="range range-slider range-slider-range" type="range" id="full-time-range" name="ft-range" min="30" max="50" value="40" style="background: linear-gradient(90deg, rgb(71, 117, 175) 55%, rgb(197, 197, 197) 55.1%);">
+                              <div class="row margin-top">
+                                  <div class="col-sm-3 col-xs-3 text-left">30</div>
+                                  <div class="col-sm-6 col-xs-6 center">HOURS PER WEEK</div>
+                                  <div class="col-sm-3 col-xs-3 text-right">50</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="part-time-range-container hidden">
+                          <div class="range-wrap">
+                              <output class="bubble" style="left: calc(60% + -1px);">20</output>
+                              <input class="range range-slider range-slider-range" type="range" id="part-time-range" name="pt-range" min="5" max="30" value="20">
+                              <div class="row margin-top">
+                                  <div class="col-sm-3 col-xs-3 text-left">5</div>
+                                  <div class="col-sm-6 col-xs-6 center">HOURS PER WEEK</div>
+                                  <div class="col-sm-3 col-xs-3 text-right">30</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-12 center margin-bottom">
+                              <h3>*Estimated Annual Earnings:</h3>
+                              <div class="earnings-amount-container">
+                                  <h3 id="earnings-amount">$103</h3>
+                              </div>
+                              <a href="javascript:void(0)" class="counselor-earnings-tooltip" data-which-tip="counselor earnings" data-text="Estimated earnings assume 52 working weeks in a year, and are based on average working conditions on the platform. Actual earnings may vary due to factors such as caseload, client engagement, and tenure on the platform." data-original-title="" title=""><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                              <div class="earnings_disclaimer">*BetterHelp does not guarantee any amount of minimum earnings.<br>The above is an estimate based on many different factors on the platform.</div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-12 center">
+                              <button id="counselor-earnings-btn" class="btn btn-success">Get Started</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </section>
+  		<section class="why-and-apply">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 apply-form pull-right">
+  						<form action="/counselor_application/" class="counselor-funnel" method="post" name="counselor-funnel">
+  							<div class="alert alert-danger hidden" id="form_errors">
+  								Please correct the following
+  							</div>
+  							<div class="slider questionnaire" id="counselor-question-slider" rel="0">
+  								<div class="counselor_question hidden">
+  									<div class="questionnaire-content">
+  										<div class="form-group">
+  											<label class="questionnaire-content-label"><strong>To get started, please select your license type(s).</strong></label>
+  											<div>
+  												<label class="checkbox slider-next-select"><input class="answer checkbox_1762" data-question-id="1762" name="quiz_answers[BH_COUNSELOR_QUIZ][1762][]" required="" type="checkbox" value="5957">Clinical Social Worker (LCSW, LICSW, LISW, LICSW, etc.)</label> <label class="checkbox slider-next-select"><input class="answer checkbox_1762" data-question-id="1762" name="quiz_answers[BH_COUNSELOR_QUIZ][1762][]" required="" type="checkbox" value="5958">Marriage & Family Therapist (LMFT, LCMFT, LIMFT, etc.)</label> <label class="checkbox slider-next-select"><input class="answer checkbox_1762" data-question-id="1762" name="quiz_answers[BH_COUNSELOR_QUIZ][1762][]" required="" type="checkbox" value="5959">Mental Health Counselor (LMHC, LCMHC, LMHP, LPMHC, etc.)</label> <label class="checkbox slider-next-select"><input class="answer checkbox_1762" data-question-id="1762" name="quiz_answers[BH_COUNSELOR_QUIZ][1762][]" required="" type="checkbox" value="5960">Professional Counselor (LPC, LPCC, LCPC, etc.)</label> <label class="checkbox slider-next-select"><input class="answer checkbox_1762" data-question-id="1762" name="quiz_answers[BH_COUNSELOR_QUIZ][1762][]" required="" type="checkbox" value="5961">Psychologist</label>
+  											</div><button class="btn btn-primary slider-next-button">Next</button>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="counselor_question hidden">
+  									<div class="questionnaire-content">
+  										<div class="form-group">
+  											<label class="questionnaire-content-label"><strong>Where do you currently spend most of your time?</strong></label>
+  											<div>
+  												<label class="radio slider-next-select"><input class="answer radio_1763" data-question-id="1763" name="quiz_answers[BH_COUNSELOR_QUIZ][1763][]" required="" type="radio" value="5962">Other online platforms like BetterHelp</label> <label class="radio slider-next-select"><input class="answer radio_1763" data-question-id="1763" name="quiz_answers[BH_COUNSELOR_QUIZ][1763][]" required="" type="radio" value="5963">Clinic or hospital</label> <label class="radio slider-next-select"><input class="answer radio_1763" data-question-id="1763" name="quiz_answers[BH_COUNSELOR_QUIZ][1763][]" required="" type="radio" value="5964">Private practice</label> <label class="radio slider-next-select"><input class="answer radio_1763" data-question-id="1763" name="quiz_answers[BH_COUNSELOR_QUIZ][1763][]" required="" type="radio" value="5965">Community mental health agency</label> <label class="radio slider-next-select"><input class="answer radio_1763" data-question-id="1763" name="quiz_answers[BH_COUNSELOR_QUIZ][1763][]" required="" type="radio" value="5966">Teaching or counseling in an academic setting</label> <label class="radio slider-next-select"><input class="answer radio_1763" data-question-id="1763" name="quiz_answers[BH_COUNSELOR_QUIZ][1763][]" required="" type="radio" value="5967">Other clinical setting</label> <label class="radio slider-next-select"><input class="answer radio_1763" data-question-id="1763" name="quiz_answers[BH_COUNSELOR_QUIZ][1763][]" required="" type="radio" value="5968">Not currently practicing</label>
+  											</div>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="counselor_question hidden">
+  									<div class="questionnaire-content">
+  										<div class="form-group">
+  											<label class="questionnaire-content-label"><strong>How much of your time is currently spent on administrative and/or billing related tasks?</strong></label>
+  											<div>
+  												<label class="radio slider-next-select"><input class="answer radio_1764" data-question-id="1764" name="quiz_answers[BH_COUNSELOR_QUIZ][1764][]" required="" type="radio" value="5969">Up to 10% of my time</label> <label class="radio slider-next-select"><input class="answer radio_1764" data-question-id="1764" name="quiz_answers[BH_COUNSELOR_QUIZ][1764][]" required="" type="radio" value="5970">10 to 30% of my time</label> <label class="radio slider-next-select"><input class="answer radio_1764" data-question-id="1764" name="quiz_answers[BH_COUNSELOR_QUIZ][1764][]" required="" type="radio" value="5971">More than 30% of my time</label>
+  											</div>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="counselor_question hidden">
+  									<div class="questionnaire-content">
+  										<div class="form-group">
+  											<label class="questionnaire-content-label"><strong>What makes you most interested in BetterHelp?</strong></label>
+  											<div>
+  												<label class="radio slider-next-select"><input class="answer radio_1765" data-question-id="1765" name="quiz_answers[BH_COUNSELOR_QUIZ][1765][]" required="" type="radio" value="5972">To build my own private practice</label> <label class="radio slider-next-select"><input class="answer radio_1765" data-question-id="1765" name="quiz_answers[BH_COUNSELOR_QUIZ][1765][]" required="" type="radio" value="5973">To supplement my private practice</label> <label class="radio slider-next-select"><input class="answer radio_1765" data-question-id="1765" name="quiz_answers[BH_COUNSELOR_QUIZ][1765][]" required="" type="radio" value="5974">To supplement my full-time job</label> <label class="radio slider-next-select"><input class="answer radio_1765" data-question-id="1765" name="quiz_answers[BH_COUNSELOR_QUIZ][1765][]" required="" type="radio" value="5975">To supplement my part-time job</label> <label class="radio slider-next-select"><input class="answer radio_1765" data-question-id="1765" name="quiz_answers[BH_COUNSELOR_QUIZ][1765][]" required="" type="radio" value="5976">Other</label>
+  											</div>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="counselor_question hidden">
+  									<div class="questionnaire-content">
+  										<div class="form-group">
+  											<label class="questionnaire-content-label"><strong>How much time do you intend to spend with BetterHelp clients?</strong></label>
+  											<div>
+  												<label class="radio slider-next-select"><input class="answer radio_1766" data-question-id="1766" name="quiz_answers[BH_COUNSELOR_QUIZ][1766][]" required="" type="radio" value="5977">Up to 5 hours a week</label> <label class="radio slider-next-select"><input class="answer radio_1766" data-question-id="1766" name="quiz_answers[BH_COUNSELOR_QUIZ][1766][]" required="" type="radio" value="5978">5 to 10 hours a week</label> <label class="radio slider-next-select"><input class="answer radio_1766" data-question-id="1766" name="quiz_answers[BH_COUNSELOR_QUIZ][1766][]" required="" type="radio" value="5979">10 to 20 hours a week</label> <label class="radio slider-next-select"><input class="answer radio_1766" data-question-id="1766" name="quiz_answers[BH_COUNSELOR_QUIZ][1766][]" required="" type="radio" value="5980">20 to 30 hours a week</label> <label class="radio slider-next-select"><input class="answer radio_1766" data-question-id="1766" name="quiz_answers[BH_COUNSELOR_QUIZ][1766][]" required="" type="radio" value="5981">More than 30 hours a week</label> <label class="radio slider-next-select"><input class="answer radio_1766" data-question-id="1766" name="quiz_answers[BH_COUNSELOR_QUIZ][1766][]" required="" type="radio" value="5982">Not sure</label>
+  											</div>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="counselor_question hidden">
+  									<div class="questionnaire-content">
+  										<div class="form-group">
+  											<label class="questionnaire-content-label"><strong>How did you first hear about BetterHelp?</strong></label>
+  											<div>
+  												<label class="radio slider-next-select"><input class="answer radio_1767" data-question-id="1767" name="quiz_answers[BH_COUNSELOR_QUIZ][1767][]" required="" type="radio" value="5986">Other</label> <label class="radio slider-next-select"><input class="answer radio_1767" data-question-id="1767" name="quiz_answers[BH_COUNSELOR_QUIZ][1767][]" required="" type="radio" value="8741">Mail</label> <label class="radio slider-next-select"><input class="answer radio_1767" data-question-id="1767" name="quiz_answers[BH_COUNSELOR_QUIZ][1767][]" required="" type="radio" value="8740">Podcast</label> <label class="radio slider-next-select"><input class="answer radio_1767" data-question-id="1767" name="quiz_answers[BH_COUNSELOR_QUIZ][1767][]" required="" type="radio" value="8742">Email Outreach</label> <label class="radio slider-next-select"><input class="answer radio_1767" data-question-id="1767" name="quiz_answers[BH_COUNSELOR_QUIZ][1767][]" required="" type="radio" value="5983">Internet Research</label> <label class="radio slider-next-select"><input class="answer radio_1767" data-question-id="1767" name="quiz_answers[BH_COUNSELOR_QUIZ][1767][]" required="" type="radio" value="5985">Friend or colleague</label>
+  											</div>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="counselor_question">
+  									<div class="questionnaire-content">
+  										<div class="form-group">
+  											<h2>Finally, please provide your name, email address, and the primary state you're licensed in.</h2>
+  											<div>
+  												<label for="first_name">First name:</label> <input class="form-control" id="first_name" name="first_name" required="" type="text" value=""><br>
+  												<label for="last_name">Last name:</label> <input class="form-control" id="last_name" name="last_name" required="" type="text" value=""><br>
+  												<label for="email">Email address:</label> <input class="form-control" id="applicant_email" name="email" required="" type="email" value=""><br>
+  												<label for="state_id">State where you are licensed:</label> <select class="form-control" id="applicant_state" name="state_id" required="">
+  													<option value="">
+  														Select state
+  													</option>
+  													<option value="1">
+  														Alabama
+  													</option>
+  													<option value="2">
+  														Alaska
+  													</option>
+  													<option value="3">
+  														Arizona
+  													</option>
+  													<option value="4">
+  														Arkansas
+  													</option>
+  													<option value="5">
+  														California
+  													</option>
+  													<option value="6">
+  														Colorado
+  													</option>
+  													<option value="7">
+  														Connecticut
+  													</option>
+  													<option value="8">
+  														Delaware
+  													</option>
+  													<option value="51">
+  														District of Columbia
+  													</option>
+  													<option value="9">
+  														Florida
+  													</option>
+  													<option value="10">
+  														Georgia
+  													</option>
+  													<option value="11">
+  														Hawaii
+  													</option>
+  													<option value="12">
+  														Idaho
+  													</option>
+  													<option value="13">
+  														Illinois
+  													</option>
+  													<option value="14">
+  														Indiana
+  													</option>
+  													<option value="15">
+  														Iowa
+  													</option>
+  													<option value="16">
+  														Kansas
+  													</option>
+  													<option value="17">
+  														Kentucky
+  													</option>
+  													<option value="18">
+  														Louisiana
+  													</option>
+  													<option value="19">
+  														Maine
+  													</option>
+  													<option value="20">
+  														Maryland
+  													</option>
+  													<option value="21">
+  														Massachusetts
+  													</option>
+  													<option value="22">
+  														Michigan
+  													</option>
+  													<option value="23">
+  														Minnesota
+  													</option>
+  													<option value="24">
+  														Mississippi
+  													</option>
+  													<option value="25">
+  														Missouri
+  													</option>
+  													<option value="26">
+  														Montana
+  													</option>
+  													<option value="27">
+  														Nebraska
+  													</option>
+  													<option value="28">
+  														Nevada
+  													</option>
+  													<option value="29">
+  														New Hampshire
+  													</option>
+  													<option value="30">
+  														New Jersey
+  													</option>
+  													<option value="31">
+  														New Mexico
+  													</option>
+  													<option value="32">
+  														New York
+  													</option>
+  													<option value="33">
+  														North Carolina
+  													</option>
+  													<option value="34">
+  														North Dakota
+  													</option>
+  													<option value="35">
+  														Ohio
+  													</option>
+  													<option value="36">
+  														Oklahoma
+  													</option>
+  													<option value="37">
+  														Oregon
+  													</option>
+  													<option value="38">
+  														Pennsylvania
+  													</option>
+  													<option value="39">
+  														Rhode Island
+  													</option>
+  													<option value="40">
+  														South Carolina
+  													</option>
+  													<option value="41">
+  														South Dakota
+  													</option>
+  													<option value="42">
+  														Tennessee
+  													</option>
+  													<option value="43">
+  														Texas
+  													</option>
+  													<option value="44">
+  														Utah
+  													</option>
+  													<option value="45">
+  														Vermont
+  													</option>
+  													<option value="46">
+  														Virginia
+  													</option>
+  													<option value="47">
+  														Washington
+  													</option>
+  													<option value="48">
+  														West Virginia
+  													</option>
+  													<option value="49">
+  														Wisconsin
+  													</option>
+  													<option value="50">
+  														Wyoming
+  													</option>
+  												</select>
+  												<div class="field_hint">
+  													(You can add more states later)
+  												</div><br>
+  												<div class="g-recaptcha" data-callback="submit_funnel_form" data-sitekey="6LfWmKsUAAAAABfY2KoyCUF0Zkm6uRcf93G3U8eC" data-size="invisible"></div><input id="g-recaptcha-token" name="g-recaptcha-token" type="hidden" value=""> <input name="csrf_token" type="hidden" value="2a4d3af9aae4f8336306f1d7571b93e2c50354dfacfbc52bca26b303a98c400096e1f2937dfefb00ac3e8723bc804ffa0ad80138a5f2c74e94d1999fedebe27c"> <button class="btn btn-primary slider-next-button" id="counselor-info" type="button">Next</button>
+  											</div>
+  										</div>
+  									</div>
+  								</div>
+  								<div class="counselor_question hidden">
+  									<div class="questionnaire-content">
+  										<h2 class="end-questionnaire">You've completed the questionnaire!</h2><button class="btn btn-default btn-block" id="counselor-funnel-submit" type="submit">Next</button>
+  									</div>
+  								</div>
+  							</div>
+  						</form>
+  					</div>
+  					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 apply-details">
+  						<h2>Why work with BetterHelp?</h2>
+  						<div class="row">
+  							<div class="col-sm-2 col-xs-3"><img src="//dy7glz37jgl0b.cloudfront.net/icons/holding-coin.png?v=26"></div>
+  							<div class="col-sm-10 col-xs-9">
+  								<h3>Reliable Income</h3>
+  								<p>Over 10,000 people sign up on BetterHelp every day looking for a counselor to help with life’s challenges. BetterHelp can be your main source of income ("full time") or a supplement to your current work.</p>
+  							</div>
+  						</div>
+  						<div class="row">
+  							<div class="col-sm-2 col-xs-3"><img src="//dy7glz37jgl0b.cloudfront.net/icons/video-chat-icon.png?v=26"></div>
+  							<div class="col-sm-10 col-xs-9">
+  								<h3>Focus on Counseling</h3>
+  								<p>No need to worry about costs from acquiring clients, billing, support or operations. Let us handle the fees and paperwork so you can focus on what you do best!</p>
+  							</div>
+  						</div>
+  						<div class="row">
+  							<div class="col-sm-2 col-xs-3"><img src="//dy7glz37jgl0b.cloudfront.net/icons/home-2.png?v=26"></div>
+  							<div class="col-sm-10 col-xs-9">
+  								<h3>Work Flexibility</h3>
+  								<p>Work from the comfort of your home on your own schedule.</p>
+  							</div>
+  						</div>
+  						<div class="row">
+  							<div class="col-sm-2 col-xs-3"><img src="//dy7glz37jgl0b.cloudfront.net/icons/surprise-box.png?v=26"></div>
+  							<div class="col-sm-10 col-xs-9">
+  								<h3>Complete Package</h3>
+  								<p>Forget about downloading and installing third party software. We’ll provide the tools to allow you to excel at your craft.</p>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</section>
+  		<section class="testimonial-in-quotes video-testimonial">
+  			<div class="container">
+  				<h2>See what other counselors have to say about us</h2>
+  				<div class="content-block no-margin-right">
+  					<div class="toggle-controls">
+  						<i class='fa fa-play-circle fa-5x'></i>
+              <video id="counselor_testimonial_video" controls="controls" poster="assets/img/counselor-collage-1.jpg">
+                <source src="assets/videos/bh_counselor_testimonials-60s.mp4" type="video/mp4">
+                </video>
+  					</div>
+  				</div>
+  			</div>
+  		</section>
+  		<section class="requirements">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+  						<h2>Requirements</h2>
+  						<ul>
+  							<li>Licensed by a State Board to provide counseling (e.g., LCSW, LMFT, LPC, PsyD or similar credentials).<br>
+  							<em>NOTE: Unfortunately, if you are an intern or if you require supervision to provide counseling services, you cannot be a provider at BetterHelp at this time. Also, we are unable to accept substance abuse counselors, school counselors, registered nurses, career counselors, Christian counselors and business/life coaches (unless they have an additional license as a mental health counselor).</em></li>
+  							<li>Experience in counseling for adults, couples, and/or teens</li>
+  							<li>Excellent writing skills</li>
+  							<li>Reliable Internet connection</li>
+  							<li>Currently residing in the US</li>
+  						</ul><em>Note: Counselors are not BetterHelp employees but independent providers.</em>
+  						<div class="center mtop20">
+  							<a class="btn btn-primary get-started-counselor-application" href="#">Get Started</a>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</section>
+      <section aria-label="hidden" class="testimonial-in-quotes body-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
+                <div class="testimonials">
+                <div class="testimonial-slider">
+                  <div class="slide">
+                    <div aria-hidden="true">
+                      <div class="testimonial-text">
+                        <div class="testimonial-highlight">
+                          I can actually see progress in my mental health which is something I haven’t been able to say in 15 years and it’s thanks to her.
+                        </div>
+                      </div>
+                      <table class="counselor">
+                        <tr>
+                          <td><img alt="" class="lozad user-icon" src="assets/img/virginia-truglio.jpg"></td>
+                          <td>Written by S.A. For Virginia Truglio<span class="credentials">(LCSW, MSW)</span></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div aria-hidden="true">
+                      <div class="testimonial-text">
+                        <div class="testimonial-highlight">
+                          Michelle listens and provides excellent guidance through life's situations.
+                        </div>
+                      </div>
+                      <table class="counselor">
+                        <tr>
+                          <td><img alt="" class="lozad user-icon" src="assets/img/michelle-wilkinson.jpg"></td>
+                          <td>Written by S.A. For Michelle Wilkinson <span class="credentials">(MA, LPC-S)</span></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <div aria-hidden="true">
+                      <div class="testimonial-text">
+                        <div aria-hidden="true" class="testimonial-highlight">
+                          Susan is amazing in her insights and conversational approach. I am so glad and blessed to have found her and started healing with her guidance.
+                        </div>
+                        <table class="counselor">
+                          <tr>
+                            <td><img alt="" class="lozad user-icon" src="assets/img/susan-hargett.jpg"></td>
+                            <td>Written by S.A. For Susan Hargett <span class="credentials">(LPC, NCC, YACEP)</span></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  	</main>
+    <footer>
+      <div class="upperbar">
+      	<div class="container">
+      		<div class="row">
+      			<div class="col-md-6">
+      				If you are in a crisis or any other person may be in danger - don't use this site. <a href="#">These resources</a> can provide you with immediate help.
+      			</div>
+      			<div class="col-md-6 right">
+      			 <a href="http://www.mentalhealthamerica.net/" target="_blank"><img alt="MHA Logo" id="mha-logo" src="assets/img/mha-badge-3.png"></a>
+             <a href="http://www.hhs.gov/ocr/privacy/" target="_blank"><img alt="HIPAA Logo" src="assets/img/hipaa.png"></a>
+             <a href="https://www.ssllabs.com/ssltest/analyze.html" target="_blank"><img alt="SSL Secure Logo" src="assets/img/ssl-secure-bw-logo.png"></a>
+             <a href="http://www.ismho.org" target="_blank"><img alt="ISMHO Logo" src="assets/img/ismho.png"></a>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+        <div class="lowerbar">
+          <div class="container">
+            <ul class="upper">
+              <div class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+              <div class="social facebook"></div>
+                <a href="#" target="_blank"><li class="social facebook"><i class="fa fa-facebook-f"></i></li></a>
+                <a href="#" target="_blank"><li class="social linkedin"><i class="fa fa-linkedin"></i></li></a>
+                <a href="#" target="_blank"><li class="social pinterest"><i class="fa fa-pinterest-p"></i></li></a>
+                <a href="#" target="_blank"><li class="social twitter"><i class="fa fa-twitter"></i></li></a>
+                <a href="/"><li>Home</li></a>
+                <a href="/about.html"><li>About</li></a>
+                <a href="/faq.html"><li>FAQ</li></a>
+                <a href="/reviews.html"><li>Reviews</li></a>
+                <a href="/advice.html"><li>Advice</li></a>
+                <a href="/contact.html"><li>Contact</li></a>
+            </ul>
+            <ul class="lower">
+              <a href="#"><li>Terms &amp; Conditions</li></a>
+              <a href="#"><li>Privacy Policy</li></a>
+              <a href="#"><li>Web Accessibility</li></a>
+              <li>&copy; 2020 BetterHelp</li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+  </div>
+  <script src="https://kit.fontawesome.com/1fbed31f7a.js" crossorigin="anonymous"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/slick/slick.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/odometer.min.js"></script>
+  <script src="assets/js/lozad.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/counselor.js"></script>
+  <script>
+  </script>
+  </body>
+</html>
